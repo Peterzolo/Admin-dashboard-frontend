@@ -1,0 +1,136 @@
+.user {
+  flex: 4;
+}
+
+.userTitleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addUserContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.userDisplay {
+  flex: 1;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.userUpdate {
+  flex: 2;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  margin-left: 20px;
+}
+
+.userDisplayImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.userDisplayTop {
+  display: flex;
+  align-items: center;
+}
+
+.userDisplayTopTitle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.userDisplayTopUsername {
+  font-weight: 600;
+}
+
+.userDisplayProfession {
+  font-weight: 300;
+}
+
+/*.userDisplayTitle{
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(8, 59, 104);
+}*/
+
+.userDisplayBottom {
+  margin-top: 20px;
+}
+
+.userDisplayInfoContainer {
+  display: flex;
+}
+
+.userUpdateTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.userUpdateForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.updateUseritem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.ceateNewuserBtn {
+  text-decoration: none;
+}
+
+.updateUseritem > label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.userUpdateInput {
+  width: 250px;
+  border: none;
+  height: 40px;
+  /*border-bottom: 1px solid gray;*/
+  background-color: rgb(207, 205, 205);
+  border-radius: 10px;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userUpdateUpload {
+  display: flex;
+  align-items: center;
+}
+
+.userUpdateicon {
+  background-color: #bae7ff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userUpdateBtn {
+  background-color: #096dd9;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}

@@ -1,0 +1,46 @@
+.userList {
+  flex: 4;
+}
+
+.renderUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.renderAvatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.renderUsername {
+}
+
+.editAndDele {
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /*-webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);*/
+}
+
+.editBtn {
+  padding: 10px 10px;
+  margin-right: 10px;
+  background-color: rgb(212, 243, 191);
+  border-radius: 10;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  padding: 10px 10px;
+  margin-right: 10px;
+  background-color: rgb(233, 231, 231);
+  border-radius: 10;
+  color: red;
+  border-radius: 10;
+  cursor: pointer;
+}

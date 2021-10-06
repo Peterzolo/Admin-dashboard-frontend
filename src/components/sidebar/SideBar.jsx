@@ -9,18 +9,31 @@ import {
   People,
   BusinessCenterOutlined,
 } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+  link: {
+    textDecoration: "none",
+  },
+});
 
 const SideBar = () => {
+  const classes = useStyles();
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarmenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarlistWrapper">
-            <li className="sidebarlistitem active">
-              <LineStyle className="sidebaricon" />
-              Home
-            </li>
+            <Link to="/" className = {classes.link}>
+              <li className="sidebarlistitem active">
+                <LineStyle className="sidebaricon" />
+                Home
+              </li>
+            </Link>
             <li className="sidebarlistitem">
               <Timeline className="sidebaricon" />
               Analytics
@@ -28,6 +41,24 @@ const SideBar = () => {
             <li className="sidebarlistitem">
               <TrendingUp className="sidebaricon" />
               Sales
+            </li>
+          </ul>
+          <ul className="sidebarlistWrapper">
+            <Link to="/users" className = {classes.link}>
+              <li className="sidebarlistitem active">
+                <LineStyle className="sidebaricon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className = {classes.link}>
+              <li className="sidebarlistitem">
+                <Timeline className="sidebaricon" />
+                Products
+              </li>
+            </Link>
+            <li className="sidebarlistitem">
+              <TrendingUp className="sidebaricon" />
+              Transaction
             </li>
           </ul>
         </div>
